@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenEvents.Android", "Seve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenEvents.iOS", "SevenEvents.iOS\SevenEvents.iOS.csproj", "{6950B4F9-B72A-46F7-9988-44DBE19BEAE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenEvents.MobileAppService", "SevenEvents.MobileAppService\SevenEvents.MobileAppService.csproj", "{11D093FF-DD16-4CDF-9480-2BA2103B179B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenEvents.MobileBackendServices", "SevenEvents.MobileBackendServices\SevenEvents.MobileBackendServices.csproj", "{11D093FF-DD16-4CDF-9480-2BA2103B179B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenEvents.UITests", "SevenEvents.UITests\SevenEvents.UITests.csproj", "{2F2240FE-3A3E-4957-8F34-4DE58CA1F208}"
 EndProject
