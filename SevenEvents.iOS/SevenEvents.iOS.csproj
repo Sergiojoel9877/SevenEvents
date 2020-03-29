@@ -146,11 +146,11 @@
       <Version>2.0.1-CSharpReload</Version>
     </PackageReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\SevenEvents\SevenEvents.csproj">
       <Project>{39DA6A14-1F87-4A71-B7D1-C330EF70B156}</Project>
       <Name>SevenEvents</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

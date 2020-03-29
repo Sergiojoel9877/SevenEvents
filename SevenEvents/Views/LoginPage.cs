@@ -12,12 +12,12 @@ namespace SevenEvents.Views
         {
             Title, LoginControlsFrame, NotRegisterStack
         }
-        
+
         void Build() => Content = new ScrollView
  	    {
             Content = new Grid
 	        {
-                BackgroundColor = Color.White,
+                BackgroundColor = Color.Black,
                 RowDefinitions = Rows.Define
                 (
                     (Row.Title, 0),
@@ -32,24 +32,29 @@ namespace SevenEvents.Views
 		                {
                             new Label()
          	                {
-                                VerticalOptions = LayoutOptions.Center,
-                                TextColor = Color.Black
+                                TextColor = Color.Orange,
+                                FontAttributes = FontAttributes.Italic | FontAttributes.Bold
                             }.FormattedText(
                                 new Span(){
-                                    Text = ConstantsValues.AppName
-                                }).CenterVertical(),
+                                    Text = "Seven Events"
+                                }).CenterVertical().FontSize(40),
+                            new Frame
+                            {
+                                Content = new StackLayout()
+                                {
+                                    Children =
+                                    {
+                                        new Label(){ Text = "Test" }
+                                    }
+                                }.Assign(out LoginControlsStackLayout)
+                            }
                         }
-                    }.Row(Row.LoginControlsFrame).CenterExpand()
+                    }.Row(Row.LoginControlsFrame).CenterExpand().Paddings(0,40,0,0).Assign(out TitleStack)
                 }
             }.FillExpand().Invoke((e)=>
-            {
+            {   
                 Shell.SetNavBarIsVisible(this, false);
             })
         };
-
-        //Frame CreateFrameWithControls() => new Frame
-        //{
-
-        //};
     }
 }

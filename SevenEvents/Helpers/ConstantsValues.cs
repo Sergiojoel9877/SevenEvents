@@ -1,11 +1,11 @@
 ﻿using System;
 namespace SevenEvents.Helpers
 {
-    public static class ConstantsValues
+    public class ConstantsValues
     {
-        public static string AppName { get; } = "Seven Events";
-        public static string LoginTitle { get; } = "Login";
-        public static string UserTitle { get; } = "Usuario";
-        public static string PasswordTitle { get; } = "Contraseña";
+        public string AppName { get; } = "Seven Events";
+        public string LoginTitle { get; } = "Login";
+        public string UserTitle { get; } = "Usuario";
+        public string PasswordTitle { get; } = "Contraseña";
     }
 }
