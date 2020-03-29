@@ -12,7 +12,7 @@ namespace SevenEvents.Views
         public LoginPage()
         {
             Build();
-            //CompressLayouts(TitleStack, LoginControlsStackLayout);
+            CompressLayouts(TitleStack, LoginControlsStackLayout);
             Visual = VisualMarker.Material;
         }
 
